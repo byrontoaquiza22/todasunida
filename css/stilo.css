@@ -1,0 +1,209 @@
+.bg-purple {
+    background-color: #800080; /* Color morado */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 25px; /* Opcional: Ajusta el borde redondeado según sea necesario */
+    color: white; /* Cambia el color del texto dentro del contenedor */
+    font-family: 'Signika', sans-serif; /* Aplica la fuente Signika a todo el contenedor */
+}
+
+.bg-purple h4 {
+    color: white; /* Asegura que el color del texto del h6 sea blanco */
+    font-family: 'Signika', sans-serif; /* Aplica la fuente Signika al h6 */
+}
+h1 {
+    font-family: 'Signika', sans-serif; /* Aplica la fuente Signika al h1 */
+    font-style: italic; /* Aplica el estilo cursivo */
+    color: #800080; /* Color morado para el texto */
+    text-align: center; /* Centra el texto */
+    margin-top: -80px; /* Ajusta el margen superior */
+}
+
+
+.pizarra-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw; /* Ajusta el ancho del contenedor al 80% del viewport */
+    height: 55vh; /* Ajusta la altura del contenedor al 70% del viewport */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-top: 20px; /* Añade un poco de espacio superior */
+}
+
+.pizarra {
+    border: 2px solid #000; /* Borde negro para el canvas */
+    background-color: #FFFFFF; /* Color azulado claro para el fondo del canvas */
+
+    background-size: 20px 20px; /* Tamaño de cada celda de la cuadrícula */
+    width: 100%; /* Ajusta el ancho del canvas al 100% del contenedor */
+    height: 100%; /* Ajusta la altura del canvas al 100% del contenedor */
+}
+
+.controls {
+    margin-top: 20px; /* Añade un espacio superior para los controles */
+    display: flex; /* Alinea los controles horizontalmente */
+    flex-wrap: wrap; /* Permite que los controles se envuelvan si es necesario */
+    gap: 10px; /* Espacio entre los controles */
+}
+
+.controls label, .controls input {
+    margin-right: 10px; /* Espacio a la derecha de los controles */
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px; /* Aumenta el tamaño del botón */
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.clear-btn {
+    background-color: #dc3545; /* Color rojo para el botón de limpiar */
+}
+
+.clear-btn:hover {
+    background-color: #c82333; /* Color rojo oscuro al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
+}
+
+.clear-btn:active {
+    background-color: #bd2130; /* Color rojo más oscuro al hacer clic */
+}
+
+.save-btn {
+    background-color: #007bff; /* Color azul para el botón de guardar */
+}
+
+.save-btn:hover {
+    background-color: #0056b3; /* Color azul oscuro al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
+}
+
+.save-btn:active {
+    background-color: #004494; /* Color azul aún más oscuro al hacer clic */
+}
+
+/* Nuevo estilo para el botón de enviar por correo */
+.send-btn {
+    background-color: #28a745; /* Color verde para el botón de enviar */
+}
+
+.send-btn:hover {
+    background-color: #218838; /* Color verde oscuro al pasar el cursor */
+    color: #fff; /* Texto blanco al pasar el cursor */
+}
+
+.send-btn:active {
+    background-color: #1e7e34; /* Color verde aún más oscuro al hacer clic */
+}
+
+/* Estilo adicional para los botones si es necesario */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Ajuste adicional para íconos dentro de los botones */
+.icon-button i {
+    margin-right: 6px; /* Espacio entre el ícono y el texto */
+}
+
+
+/*modal estilo*/
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgb(0,0,0); /* Fondo negro con opacidad */
+    background-color: rgba(0,0,0,0.4); /* Fondo con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde el top y centrado en el medio */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em; /* Tamaño del título del modal */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados para campos de entrada */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px; /* Altura mínima para el área de texto */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados para botones */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+}
+
+button.send-btn {
+    background-color: #28a745; /* Color verde para el botón de enviar */
+}
+
+button.send-btn:hover {
+    background-color: #218838; /* Verde oscuro al pasar el cursor */
+}
+
+button.send-btn:active {
+    background-color: #1e7e34; /* Verde aún más oscuro al hacer clic */
+}

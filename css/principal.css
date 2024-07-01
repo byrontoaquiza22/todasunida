@@ -1,0 +1,43 @@
+
+/* Estilos para el contenedor del video */
+.container-fluid {
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+/* Estilos para el video */
+.carousel-item .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Altura fija del contenedor */
+}
+
+.carousel-item .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto; /* El ancho se ajustará automáticamente */
+    height: 850px; /* La altura se ajustará al 100% del contenedor */
+    transform: translate(-50%, -50%);
+    border-radius: 5px; /* Bordes redondeados para el video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el video */
+}
+
+/* Estilos para el texto del carousel */
+.carousel-caption .container .row .col-lg-7 {
+    text-align: center;
+}
+
+
+/* Animación para el texto */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
