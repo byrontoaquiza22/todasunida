@@ -138,7 +138,7 @@ container-fluid
 @media (max-width: 991.98px) {
     .navbar .navbar-brand {
         width: 126px;
-        height: 100px;
+        height: 50px;
     }
 
     .navbar .navbar-nav .nav-link  {
